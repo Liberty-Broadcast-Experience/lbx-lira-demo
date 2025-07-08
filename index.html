@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LIRA Proof of Concept</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+    });
+</script>
+
+<script>
+    window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+
+        const rows = document.querySelectorAll('table tr');
+        rows.forEach((row, index) => {
+            setTimeout(() => {
+                row.classList.add('visible');
+            }, 500 + index * 150); // start after 500ms, stagger by 150ms
+        });
+    });
+</script>
+
+
+<body>
+<header>
+    <div class="header-content">
+        <h1>LIRA Schedule Demo</h1>
+        <input type="text" placeholder="Search" class="search-box">
+    </div>
+</header>
+
+<div class="rectangles">
+    <div class="rectangle">
+        <span class="rectangle-label">Schedule</span>
+    </div>
+    <div class="rectangle">
+        <span class="rectangle-label">Multiview</span>
+    </div>
+</div>
+<table>
+    <tr>
+        <th></th>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>Event</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>PCR</th>
+        <th>Platform</th>
+    </tr>
+<tr>
+    <td></td>
+    <td>2025-07-10</td>
+    <td>08:00</td>
+    <td>Morning News</td>
+    <td>John Smith</td>
+    <td>Studio A</td>
+    <td>PCR 1</td>
+    <td>Live TV</td>
+</tr>
+
+<tr>
+    <td><span class="status-circle live"></span></td>
+    <td>2025-07-10</td>
+    <td>10:00</td>
+    <td>Weather Update</td>
+    <td>Jane Doe</td>
+    <td>Weather Center</td>
+    <td>PCR 2</td>
+    <td>Live TV</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>2025-07-10</td>
+    <td>12:00</td>
+    <td>Midday Report</td>
+    <td>Mike Brown</td>
+    <td>Studio B</td>
+    <td>PCR 1</td>
+    <td>Live Stream</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>2025-07-10</td>
+    <td>14:00</td>
+    <td>Sports Highlights</td>
+    <td>Lisa Green</td>
+    <td>Sports Desk</td>
+    <td>PCR 3</td>
+    <td>OTT</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>2025-07-10</td>
+    <td>16:00</td>
+    <td>Afternoon Bulletin</td>
+    <td>Chris White</td>
+    <td>Studio C</td>
+    <td>PCR 2</td>
+    <td>Live TV</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>2025-07-10</td>
+    <td>18:00</td>
+    <td>Evening News</td>
+    <td>Sarah Black</td>
+    <td>Studio A</td>
+    <td>PCR 1</td>
+    <td>Satellite</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>2025-07-10</td>
+    <td>20:00</td>
+    <td>Prime Time Special</td>
+    <td>David Gray</td>
+    <td>Main Auditorium</td>
+    <td>PCR 4</td>
+    <td>Live TV</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>2025-07-10</td>
+    <td>22:00</td>
+    <td>Late Night Talk</td>
+    <td>Emily Blue</td>
+    <td>Studio B</td>
+    <td>PCR 2</td>
+    <td>OTT</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>2025-07-11</td>
+    <td>00:00</td>
+    <td>Midnight Recap</td>
+    <td>Alex Brown</td>
+    <td>Studio C</td>
+    <td>PCR 3</td>
+    <td>Live Stream</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>2025-07-11</td>
+    <td>02:00</td>
+    <td>Overnight News</td>
+    <td>Kate Silver</td>
+    <td>Newsroom</td>
+    <td>PCR 1</td>
+    <td>Satellite</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
